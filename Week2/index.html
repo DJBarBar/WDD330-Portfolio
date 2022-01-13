@@ -9,15 +9,24 @@
   <body>
     <h1>W02 Team Activity</h1>
 
-    <label>Your text: <input type="text" id="textInput" name="text" /></label>
-    <label><button onclick="displayText()">Display It</button></label>
-    <div id="displayResult"></div>
+    <input type="text" id="textInput" name="text" />
+    <button onclick="displayText()">Send It!</button>
+    <br />
 
-    <label
-      >Your number: <input type="number" id="numberInput" name="number"
-    /></label>
-    <label><button onclick="sumNumber()">Display It</button></label>
-    <div id="displayNumber"></div>
+    <div id="displayResult"></div>
+    <br />
+
+    <input type="number" id="numberInput" name="number" />
+    <button onclick="sumNumber()">Add It Up!</button>
+    <br />
+
+    <div id="showSum"></div>
+
+    <input type="number" id="number2Input" name="number" />
+    <button onclick="addNumber()"></button>
+    <br />
+
+    <div id="sumAll"></div>
 
     <script src="main.js"></script>
   </body>

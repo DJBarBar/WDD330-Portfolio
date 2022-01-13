@@ -1,11 +1,10 @@
 function displayText() {
   let text = document.getElementById("textInput").value;
-  document.getElementById("displayText").innerHTML = text;
+  document.getElementById("displayResult").innerHTML = text;
 }
 
-function sumNumbers() {
-  let myNumber = Number(document.getElementById("numberInput").value);
-
+function sumNumber() {
+  let myNumber = parseInt(document.getElementById("numberInput").value);
   let mySum = 0;
 
   for (
@@ -15,6 +14,13 @@ function sumNumbers() {
   ) {
     mySum = mySum + previousNumber;
   }
+  document.getElementById("showSum").innerHTML = parseInt(myNumber + mySum);
+}
 
-  document.getElementById("displayResult").innerHTML = myNumber + mySum;
+function addNumber() {
+  let myNumber = parseInt(document.getElementById("numberInput").value);
+  let myNumber2 = parseInt(document.getElementById("number2Input").value);
+  let sum = myNumber + myNumber2;
+
+  document.getElementById("sumAll").innerHTML = parseInt(sum);
 }
