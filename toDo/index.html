@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link href="todo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <h1 class="todo__title">To Do List</h1>
+      <div class="todo__list" id="todo__list"></div>
+      <div class="todo__footer">
+        <p class="todo__count"><span id="todo__count"></span> tasks left</p>
+        <button id="all" class="todo__button todo__button--select">All</button>
+        <button id="active" class="todo__button">Active</button>
+        <button id="complete" class="todo__button">Completed</button>
+      </div>
+      <div class="todo__add">
+        <label for="todo__add" class="todo__add--hidden">add task</label>
+        <input id="todo__add" class="todo__add" type="text" />
+        <input
+          type="submit"
+          value="add task"
+          id="todo__submit"
+          class="todo__submit"
+        />
+      </div>
+    </main>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
